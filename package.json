@@ -4,15 +4,33 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-compat": "^4.1.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-solid": "^0.12.1",
+    "eslint-plugin-unicorn": "^47.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.5.1",
+    "pretty-format": "^29.5.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-prettier": "^3.0.0",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "antd-solid"
+  "name": "antd-solid",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "prettier --ignore-unknown --write",
+    "*.{json,less,md}": "prettier --ignore-unknown --write"
+  }
 }

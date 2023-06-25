@@ -1,0 +1,21 @@
+!components/*/__tests__/**/*.js
+!components/*/demo/*.md
+!.*.js
+~*
+typings
+es/**/*
+lib/**/*
+locale
+server
+.dumi/tmp
+.dumi/tmp-production
+!.storybook/
+node_modules
+.eslintcache
+_site
+dist
+coverage
+**/*.d.ts
+# Scripts
+scripts/previewEditor/**/*
+jest-stare

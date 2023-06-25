@@ -1,0 +1,26 @@
+{
+  "name": "sc-util",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/sc-util.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:utils": "tsc && vite build"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/sc-util.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
