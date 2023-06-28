@@ -25,7 +25,10 @@
     "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@ant-design/icons": "^5.1.4",
     "@ctrl/tinycolor": "^3.6.0",
-    "cssinjs": "workspace:*"
+    "classnames": "^2.3.2",
+    "sc-util": "workspace:*"
   }
 }

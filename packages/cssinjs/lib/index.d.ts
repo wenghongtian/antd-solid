@@ -10,20 +10,5 @@ import { createTheme, Theme } from './theme';
 import type { Transformer } from './transformers/interface';
 import legacyLogicalPropertiesTransformer from './transformers/legacyLogicalProperties';
 import px2remTransformer from './transformers/px2rem';
-export {
-  Theme,
-  createTheme,
-  useStyleRegister,
-  useCacheToken,
-  createCache,
-  StyleProvider,
-  Keyframes,
-  extractStyle,
-  getComputedToken,
-  legacyLogicalPropertiesTransformer,
-  px2remTransformer,
-  logicalPropertiesLinter,
-  legacyNotSelectorLinter,
-  parentSelectorLinter,
-};
+export { Theme, createTheme, useStyleRegister, useCacheToken, createCache, StyleProvider, Keyframes, extractStyle, getComputedToken, legacyLogicalPropertiesTransformer, px2remTransformer, logicalPropertiesLinter, legacyNotSelectorLinter, parentSelectorLinter, };
 export type { TokenType, CSSObject, CSSInterpolation, DerivativeFunc, Transformer, Linter };

@@ -10,7 +10,7 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc && vite build",
-    "build:utils": "tsc && vite build"
+    "build:utils": "tsc && vite build -w"
   },
   "exports": {
     ".": {

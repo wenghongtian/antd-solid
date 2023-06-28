@@ -2,12 +2,12 @@ export type ContainerType = Element | ShadowRoot;
 export type Prepend = boolean | 'queue';
 export type AppendType = 'prependQueue' | 'append' | 'prepend';
 interface Options {
-  attachTo?: ContainerType;
-  csp?: {
-    nonce?: string;
-  };
-  prepend?: Prepend;
-  mark?: string;
+    attachTo?: ContainerType;
+    csp?: {
+        nonce?: string;
+    };
+    prepend?: Prepend;
+    mark?: string;
 }
 export declare function injectCSS(css: string, option?: Options): HTMLStyleElement;
 export declare function removeCSS(key: string, option?: Options): void;
